@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://2w75t34789.zicp.vip/"/>
-  <updated>2019-12-12T07:44:23.912Z</updated>
+  <updated>2019-12-12T08:17:17.546Z</updated>
   <id>http://2w75t34789.zicp.vip/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Servlet3.0上传文件</title>
+    <link href="http://2w75t34789.zicp.vip/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+    <id>http://2w75t34789.zicp.vip/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</id>
+    <published>2019-12-12T08:13:48.000Z</published>
+    <updated>2019-12-12T08:17:17.546Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="getPart-getParts-取得上传文件"><a href="#getPart-getParts-取得上传文件" class="headerlink" title="getPart(),getParts()取得上传文件"></a>getPart(),getParts()取得上传文件</h1><p>在Servlet3.0中内置了上传文件的API，所以上传变得非常方便  </p><h2 id="首先是前端的代码"><a href="#首先是前端的代码" class="headerlink" title="首先是前端的代码"></a>首先是前端的代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>上传文件<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/upload.do"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></span><br><span class="line">        上传文件:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"photo"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Upload"</span> <span class="attr">name</span>=<span class="string">"upload"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="后端处理的代码"><a href="#后端处理的代码" class="headerlink" title="后端处理的代码"></a>后端处理的代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.MultipartConfig;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.Part;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置上传的目录</span></span><br><span class="line"><span class="meta">@MultipartConfig</span>(location = <span class="string">"D:/upload"</span>)</span><br><span class="line"><span class="meta">@WebServlet</span>(<span class="string">"/upload.do"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UploadServlet3</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        req.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">        resp.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">        resp.setContentType(<span class="string">"text/html;charset=utf-8"</span>);</span><br><span class="line"></span><br><span class="line">        Part part = req.getPart(<span class="string">"photo"</span>);</span><br><span class="line">        String filename = getFilename(part);</span><br><span class="line">        part.write(filename);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getFilename</span><span class="params">(Part part)</span></span>&#123;</span><br><span class="line">        String header = part.getHeader(<span class="string">"Content-Disposition"</span>);</span><br><span class="line">        String filename = header.substring(header.indexOf(<span class="string">"filename=\""</span>) + <span class="number">10</span>,header.lastIndexOf(<span class="string">"\""</span>));</span><br><span class="line">        <span class="keyword">return</span> filename;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;getPart-getParts-取得上传文件&quot;&gt;&lt;a href=&quot;#getPart-getParts-取得上传文件&quot; class=&quot;headerlink&quot; title=&quot;getPart(),getParts()取得上传文件&quot;&gt;&lt;/a&gt;getPart(),getP
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Java" scheme="http://2w75t34789.zicp.vip/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>测试</title>
     <link href="http://2w75t34789.zicp.vip/2019/12/12/%E6%B5%8B%E8%AF%95/"/>
     <id>http://2w75t34789.zicp.vip/2019/12/12/%E6%B5%8B%E8%AF%95/</id>
     <published>2019-12-12T07:40:55.000Z</published>
-    <updated>2019-12-12T07:44:23.912Z</updated>
+    <updated>2019-12-12T08:05:27.545Z</updated>
     
     <summary type="html">
     
@@ -30,6 +54,8 @@
     
     
       <category term="Java" scheme="http://2w75t34789.zicp.vip/tags/Java/"/>
+    
+      <category term="MySQL" scheme="http://2w75t34789.zicp.vip/tags/MySQL/"/>
     
   </entry>
   
