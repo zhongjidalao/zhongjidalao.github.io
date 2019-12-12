@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://2w75t34789.zicp.vip/"/>
+  <link href="http://mddcloud.cn/"/>
   <updated>2019-12-12T09:21:11.295Z</updated>
-  <id>http://2w75t34789.zicp.vip/</id>
+  <id>http://mddcloud.cn/</id>
   
   <author>
     <name>马丹丹</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>在手机上安装Linux</title>
-    <link href="http://2w75t34789.zicp.vip/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/"/>
-    <id>http://2w75t34789.zicp.vip/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/</id>
+    <link href="http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/"/>
+    <id>http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/</id>
     <published>2019-12-12T08:30:00.000Z</published>
     <updated>2019-12-12T09:21:11.295Z</updated>
     
@@ -37,14 +37,14 @@
     
     
     
-      <category term="Linux" scheme="http://2w75t34789.zicp.vip/tags/Linux/"/>
+      <category term="Linux" scheme="http://mddcloud.cn/tags/Linux/"/>
     
   </entry>
   
   <entry>
     <title>Servlet3.0上传文件</title>
-    <link href="http://2w75t34789.zicp.vip/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
-    <id>http://2w75t34789.zicp.vip/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</id>
+    <link href="http://mddcloud.cn/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+    <id>http://mddcloud.cn/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</id>
     <published>2019-12-12T08:13:48.000Z</published>
     <updated>2019-12-12T08:33:20.081Z</updated>
     
@@ -61,14 +61,14 @@
     
     
     
-      <category term="Java" scheme="http://2w75t34789.zicp.vip/tags/Java/"/>
+      <category term="Java" scheme="http://mddcloud.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>测试</title>
-    <link href="http://2w75t34789.zicp.vip/2019/12/12/%E6%B5%8B%E8%AF%95/"/>
-    <id>http://2w75t34789.zicp.vip/2019/12/12/%E6%B5%8B%E8%AF%95/</id>
+    <link href="http://mddcloud.cn/2019/12/12/%E6%B5%8B%E8%AF%95/"/>
+    <id>http://mddcloud.cn/2019/12/12/%E6%B5%8B%E8%AF%95/</id>
     <published>2019-12-12T07:40:55.000Z</published>
     <updated>2019-12-12T08:05:27.545Z</updated>
     
@@ -78,16 +78,16 @@
     
     
     
-      <category term="Java" scheme="http://2w75t34789.zicp.vip/tags/Java/"/>
+      <category term="Java" scheme="http://mddcloud.cn/tags/Java/"/>
     
-      <category term="MySQL" scheme="http://2w75t34789.zicp.vip/tags/MySQL/"/>
+      <category term="MySQL" scheme="http://mddcloud.cn/tags/MySQL/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://2w75t34789.zicp.vip/2019/12/12/hello-world/"/>
-    <id>http://2w75t34789.zicp.vip/2019/12/12/hello-world/</id>
+    <link href="http://mddcloud.cn/2019/12/12/hello-world/"/>
+    <id>http://mddcloud.cn/2019/12/12/hello-world/</id>
     <published>2019-12-12T04:10:41.881Z</published>
     <updated>2019-12-12T04:10:41.881Z</updated>
     
