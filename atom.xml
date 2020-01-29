@@ -95,25 +95,6 @@
   </entry>
   
   <entry>
-    <title>测试</title>
-    <link href="http://mddcloud.cn/2019/12/12/%E6%B5%8B%E8%AF%95/"/>
-    <id>http://mddcloud.cn/2019/12/12/%E6%B5%8B%E8%AF%95/</id>
-    <published>2019-12-12T07:40:55.000Z</published>
-    <updated>2019-12-12T08:05:27.545Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-      <category term="Java" scheme="http://mddcloud.cn/tags/Java/"/>
-    
-      <category term="MySQL" scheme="http://mddcloud.cn/tags/MySQL/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Hello World</title>
     <link href="http://mddcloud.cn/2019/12/12/hello-world/"/>
     <id>http://mddcloud.cn/2019/12/12/hello-world/</id>
