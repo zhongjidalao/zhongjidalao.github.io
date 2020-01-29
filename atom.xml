@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mddcloud.cn/"/>
-  <updated>2020-01-29T08:15:37.229Z</updated>
+  <updated>2020-01-29T08:16:50.860Z</updated>
   <id>http://mddcloud.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://mddcloud.cn/2020/01/29/leetcode%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
     <id>http://mddcloud.cn/2020/01/29/leetcode%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</id>
     <published>2020-01-29T07:55:56.000Z</published>
-    <updated>2020-01-29T08:15:37.229Z</updated>
+    <updated>2020-01-29T08:16:50.860Z</updated>
     
     <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p><p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p><p><strong>示例：</strong></p><blockquote><p>给定 nums = [2, 7, 11, 15], target = 9</p><p>因为 nums[0] + nums[1] = 2 + 7 = 9<br>所以返回 [0, 1]</p></blockquote><h2 id="方法一：暴力法"><a href="#方法一：暴力法" class="headerlink" title="方法一：暴力法"></a>方法一：暴力法</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j] == target - nums[i]) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, j &#125;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="方法分析："><a href="#方法分析：" class="headerlink" title="方法分析："></a>方法分析：</h4><ul><li>本方法用了两层for循环，时间复杂度为O(n<sub>2</sub>)</li><li>第一层for循环把数组从低到高遍历一遍，找出每个数字的下标</li><li>第二层for循环在第一层for循环的基础上，使用if语句对比数字下标为 i 的数字和之后的每个数字</li><li>使用一个if语句对比两层循环的下标，如果存在正好能被target减去的，则为正确答案</li></ul>]]></content>
     
@@ -40,6 +40,8 @@
       <category term="Java" scheme="http://mddcloud.cn/tags/Java/"/>
     
       <category term="数据结构" scheme="http://mddcloud.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="leetcode" scheme="http://mddcloud.cn/tags/leetcode/"/>
     
   </entry>
   
