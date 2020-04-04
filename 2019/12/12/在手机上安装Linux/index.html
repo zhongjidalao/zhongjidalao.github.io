@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>在手机上安装Linux | 马丹丹的博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Linux">
+    <meta name="description" content="一、准备工作手机需要先root，然后安装三个软件 BusyBox 安装Linux的支撑组件 Linux Deploy Linux的容器 JuiceSSH SSH连接软件   安装效果如下 二、配置Linux Deploy接下来打开Linux Deploy，先点击右下角的按钮，进入到Linux的配置界面，我试过很多给版本，目前的这个版本是最稳定的，建议配置的和我一样  三、安装Linux完成这些配置">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在手机上安装Linux">
+<meta property="og:url" content="http:&#x2F;&#x2F;mddcloud.cn&#x2F;2019&#x2F;12&#x2F;12&#x2F;%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux&#x2F;index.html">
+<meta property="og:site_name" content="马丹丹的博客">
+<meta property="og:description" content="一、准备工作手机需要先root，然后安装三个软件 BusyBox 安装Linux的支撑组件 Linux Deploy Linux的容器 JuiceSSH SSH连接软件   安装效果如下 二、配置Linux Deploy接下来打开Linux Deploy，先点击右下角的按钮，进入到Linux的配置界面，我试过很多给版本，目前的这个版本是最稳定的，建议配置的和我一样  三、安装Linux完成这些配置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;Q6txMD.md.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;Q6wucV.md.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;Q6wp1P.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;Q6dsS0.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.imageoss.com&#x2F;images&#x2F;2019&#x2F;12&#x2F;12&#x2F;TIM20191212164137.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.imageoss.com&#x2F;images&#x2F;2019&#x2F;12&#x2F;12&#x2F;TIM20191212164129.jpg">
+<meta property="og:image" content="https:&#x2F;&#x2F;www.imageoss.com&#x2F;images&#x2F;2019&#x2F;12&#x2F;12&#x2F;TIM20191212164134.png">
+<meta property="article:published_time" content="2019-12-12T08:30:00.000Z">
+<meta property="article:modified_time" content="2019-12-12T09:21:11.295Z">
+<meta property="article:author" content="马丹丹">
+<meta property="article:tag" content="Linux">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;s2.ax1x.com&#x2F;2019&#x2F;12&#x2F;12&#x2F;Q6txMD.md.jpg">
+    
+        <link rel="alternate" type="application/atom+xml" title="马丹丹的博客" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.1.0"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">马丹丹</h5>
+          <a href="mailto:mdd12138@163.com" title="mdd12138@163.com" class="mail">mdd12138@163.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/zhongjidalao" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">在手机上安装Linux</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">在手机上安装Linux</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-12-12T08:30:00.000Z" itemprop="datePublished" class="page-time">
+  2019-12-12
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#一、准备工作"><span class="post-toc-number">1.</span> <span class="post-toc-text">一、准备工作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装效果如下"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">安装效果如下</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#二、配置Linux-Deploy"><span class="post-toc-number">2.</span> <span class="post-toc-text">二、配置Linux Deploy</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#三、安装Linux"><span class="post-toc-number">3.</span> <span class="post-toc-text">三、安装Linux</span></a></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-在手机上安装Linux"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">在手机上安装Linux</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-12-12 16:30:00" datetime="2019-12-12T08:30:00.000Z"  itemprop="datePublished">2019-12-12</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>手机需要先root，然后安装三个软件</p>
+<p><strong>BusyBox</strong> 安装Linux的支撑组件</p>
+<p><strong>Linux Deploy</strong> Linux的容器</p>
+<p><strong>JuiceSSH</strong> SSH连接软件</p>
+<p> <img src="https://s2.ax1x.com/2019/12/12/Q6txMD.md.jpg" alt="Q6txMD.md.jpg"></p>
+<h3 id="安装效果如下"><a href="#安装效果如下" class="headerlink" title="安装效果如下"></a>安装效果如下</h3><p><img src="https://s2.ax1x.com/2019/12/12/Q6wucV.md.png" alt="Q6wucV.md.png"><br><img src="https://s2.ax1x.com/2019/12/12/Q6wp1P.png" alt="Q6wp1P.png"><br><img src="https://s2.ax1x.com/2019/12/12/Q6dsS0.png" alt="Q6dsS0.png"></p>
+<h2 id="二、配置Linux-Deploy"><a href="#二、配置Linux-Deploy" class="headerlink" title="二、配置Linux Deploy"></a>二、配置Linux Deploy</h2><p>接下来打开Linux Deploy，先点击右下角的按钮，进入到Linux的配置界面，我试过很多给版本，目前的这个版本是最稳定的，建议配置的和我一样</p>
+<p><img src="https://www.imageoss.com/images/2019/12/12/TIM20191212164137.png" alt="TIM20191212164137.png"><br><img src="https://www.imageoss.com/images/2019/12/12/TIM20191212164129.jpg" alt="TIM20191212164129.jpg"><br><img src="https://www.imageoss.com/images/2019/12/12/TIM20191212164134.png" alt="TIM20191212164134.png"></p>
+<h2 id="三、安装Linux"><a href="#三、安装Linux" class="headerlink" title="三、安装Linux"></a>三、安装Linux</h2><p>完成这些配置后返回首页面，点击右上角的三个点，然后点击安装。<br>因为源配置的是国内的源，速度快的话几分钟就好了。<br>当出现&lt;&lt;&lt;deploy时，就是完成了</p>
+<p>这时就点击启动，然后用SSH连接工具，连接到Linux了。</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2019-12-12T09:21:11.295Z" itemprop="dateUpdated">2019-12-12 17:21:11</time>
+</span><br>
+
+
+        
+        本页地址：<a href="/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/" target="_blank" rel="external">http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/</a>
+        
+    </div>
+    
+    <footer>
+        <a href="http://mddcloud.cn">
+            <img src="/img/avatar.jpg" alt="马丹丹">
+            马丹丹
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/&title=《在手机上安装Linux》 — 马丹丹的博客&pic=http://mddcloud.cn/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/&title=《在手机上安装Linux》 — 马丹丹的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《在手机上安装Linux》 — 马丹丹的博客&url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/&via=http://mddcloud.cn" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2020/01/29/leetcode%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">leetcode两数之和</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Servlet3.0上传文件</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>博客内容遵循 <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>马丹丹 &copy; 2019 - 2020</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备17025066号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/&title=《在手机上安装Linux》 — 马丹丹的博客&pic=http://mddcloud.cn/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/&title=《在手机上安装Linux》 — 马丹丹的博客&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《在手机上安装Linux》 — 马丹丹的博客&url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/&via=http://mddcloud.cn" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAADMUlEQVR42u3aS5LaQBAFwLn/pccbL+yw0bxXBRGoSa0IkJrOZlHU5+srvr7/uK4//fee62cfrfbo2Ufrf73iwsbGxr4J+/vyehbses3kzuvd5hZsbGzsU9mzQJIfwXOPJg9vD9/HxsbG/nh2u4kkYciDFjY2Njb2s9jX78xWaMtJ2NjY2Nh5UWnfSNgU/XP2k2tp2NjY2G/PnjVf3/P1S/rb2NjY2G/M/n7BtU9d8nuGO8TGxsY+iD1LDDb4TWkpbz9gY2Njfxo7+bL2zv1Az2aFVQkJGxsb+1bs65vyIs5shbaJG7VvEyk2Njb2oeykaZo3a/et1lmCFD2LjY2NfRD7WQ3UPKS16+y/94dJJWxsbOwj2M8t67QlqvYb20ZCFMawsbGxb85uE4ZN43bWVMj3UMdtbGxs7Juz8wdmG9qX+zcHio2Njf057HaLSSMhaf3O2gCb/fzV6MXGxsb+APasmZo/m6cW7TpROQkbGxv7IPYM0I5O5uNB+d5mY6DY2NjYJ7HbwJP80W/btLOBoU04xMbGxj6P3X5N+2leeIpmi+IDKiaVsLGxsW/ObpOK5NMcsE9FZo0KbGxs7JPYbRqQj+zk6Ueb8LQJSRS3sbGxsW/LztsAbSG+ZSdhMg9y9e+DjY2NfUP2DDxr3OYr58WpdpDo9/vY2NjYB7FbUpIGtIX7WdlodhDY2NjYp7JnzdS2EJ8DkndmjYRhLoWNjY39xuxZcMoTj7aF0DaG84P4TwaGjY2NfQR71RkOAPmgz+sSGGxsbOyz2e1js8ZA276dFbmK5jQ2Njb2QezZKGSSHrRH2T51HWKjA8XGxsY+gt1i8uJRe3x5OWk/momNjY19Erst6LTlpHwTeUO3PY6Hx42NjY19BPu7vDYhJ09FZi2K/ECxsbGxT2Jv/u63xZ02XCXjOMkPkB80NjY29n3ZeSKR/+nP265tgMxhP/y22NjY2Mex9w3gJNjsB3HaFsUPeRg2Njb2h7Hzwv1muCe/cxP2sLGxsT+TvRnW2bd7nxs+sbGxsc9jbwZuZhudhc/koKMwho2NjX0QO2/05iEqTzCSI26PqT1ibGxs7NuyfwGY8L+DJE9E5AAAAABJRU5ErkJggg==" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
