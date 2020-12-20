@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mddcloud.cn/"/>
-  <updated>2020-04-07T08:37:04.501Z</updated>
+  <updated>2020-07-29T02:10:20.411Z</updated>
   <id>http://mddcloud.cn/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单链表</title>
+    <link href="http://mddcloud.cn/2020/07/29/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    <id>http://mddcloud.cn/2020/07/29/%E5%8D%95%E9%93%BE%E8%A1%A8/</id>
+    <published>2020-07-29T02:01:00.000Z</published>
+    <updated>2020-07-29T02:10:20.411Z</updated>
+    
+    <content type="html"><![CDATA[<p>单链表的一个结点分为数据域和指针域，每个指针域里存储着下一个结点的指针信息，这样n个结点连接在一起，就形成了单链表。</p><h3 id="单链表的存储结构"><a href="#单链表的存储结构" class="headerlink" title="单链表的存储结构"></a>单链表的存储结构</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">LinkList</span>;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;单链表的一个结点分为数据域和指针域，每个指针域里存储着下一个结点的指针信息，这样n个结点连接在一起，就形成了单链表。&lt;/p&gt;
+&lt;h3 id=&quot;单链表的存储结构&quot;&gt;&lt;a href=&quot;#单链表的存储结构&quot; class=&quot;headerlink&quot; title=&quot;单链表的存储结构&quot;&gt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="数据结构" scheme="http://mddcloud.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="线性表" scheme="http://mddcloud.cn/tags/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+    
+  </entry>
   
   <entry>
     <title>定时发送微信订阅消息</title>
