@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mddcloud.cn/"/>
-  <updated>2020-07-29T02:10:20.411Z</updated>
+  <updated>2021-07-10T17:25:18.961Z</updated>
   <id>http://mddcloud.cn/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>图数据库Neo4j的安装与使用</title>
+    <link href="http://mddcloud.cn/2021/07/10/%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93Neo4j%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>http://mddcloud.cn/2021/07/10/%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93Neo4j%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2021-07-10T15:15:09.000Z</published>
+    <updated>2021-07-10T17:25:18.961Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、Neo4j的安装"><a href="#一、Neo4j的安装" class="headerlink" title="一、Neo4j的安装"></a>一、Neo4j的安装</h2><p><a href="https://neo4j.com/download-center/#community" target="_blank" rel="noopener">Neo4j Download Center - Neo4j Graph Database Platform</a></p><ol><li><p>下载</p><p>点击上面这个链接根据自己电脑的系统下载对应版本的neo4j社区版，点击下载按钮后会跳转到一个用户注册的页面，不用注册，稍等一下就弹出下载了。</p></li></ol><p>下载完安装包后，将安装包解压放到系统的某个目录里，复制bin目录的路径，写入到系统的环境变量中。</p><p>[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://imgtu.com/i/Wp4FZq" alt="Wp4FZq.png](https://z3.ax1x.com/2021/07/11/Wp4FZq.png)" title="">                </div>                <div class="image-caption">Wp4FZq.png](https://z3.ax1x.com/2021/07/11/Wp4FZq.png)</div>            </figure></p><p>[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://imgtu.com/i/Wp4kd0" alt="Wp4kd0.png](https://z3.ax1x.com/2021/07/11/Wp4kd0.png)" title="">                </div>                <div class="image-caption">Wp4kd0.png](https://z3.ax1x.com/2021/07/11/Wp4kd0.png)</div>            </figure></p><p><strong>接下来要注意，neo4j最新版对应的java版本是java11，没有的可以先去安装个java11</strong></p><ol start="2"><li><p>启动</p><p>在命令行输入 <code>neo4j console</code> 在命令行中启动neo4j</p><p>[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://imgtu.com/i/Wp4GFK" alt="Wp4GFK.png](https://z3.ax1x.com/2021/07/11/Wp4GFK.png)" title="">                </div>                <div class="image-caption">Wp4GFK.png](https://z3.ax1x.com/2021/07/11/Wp4GFK.png)</div>            </figure></p></li></ol><p>windows系统这时如果不想在命令行里启动，想让neo4j在后台启动的话，需要安装neo4j的服务，在命令行输入</p><p><code>neo4j install-service</code></p><p>然后就可以输入 <code>neo4j start</code> 将neo4j在后台启动</p><p>安装并启动完毕后，就可以打开浏览器，输入<code>http://localhost:7474</code>进入neo4j的管理页面。</p><p>初始账号密码为：<strong><em>neo4j</em></strong>和<strong><em>neo4j</em></strong>。首次进入会让设置账号密码，按照自己的喜好设置即可。</p><p>[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://imgtu.com/i/Wp4L6J" alt="Wp4L6J.png](https://z3.ax1x.com/2021/07/11/Wp4L6J.png)" title="">                </div>                <div class="image-caption">Wp4L6J.png](https://z3.ax1x.com/2021/07/11/Wp4L6J.png)</div>            </figure></p><p>这就算安装并启动成功了。</p><h2 id="二、使用"><a href="#二、使用" class="headerlink" title="二、使用"></a>二、使用</h2><p>接下来使用neo4j自己带的Demo，运行其中的Hello Word，来体验一下图数据库。</p><p>[<figure class="image-bubble">                <div class="img-lightbox">                    <div class="overlay"></div>                    <img src="https://imgtu.com/i/Wp5PpD" alt="Wp5PpD.png](https://z3.ax1x.com/2021/07/11/Wp5PpD.png)" title="">                </div>                <div class="image-caption">Wp5PpD.png](https://z3.ax1x.com/2021/07/11/Wp5PpD.png)</div>            </figure></p><p>这样就完成了一个Hello Word的小Demo。</p><p>Neo4j的增删改查都是要写类似于SQL语句的东西，具体的语法可以去w3c上看看，写的非常详细。<a href="https://www.w3cschool.cn/neo4j/" target="_blank" rel="noopener">neo4j 教程_w3cschool</a></p><p>这一篇写了Neo4j的安装与简单的使用，下一篇文章将会写Neo4j在SpringBoot中的使用。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、Neo4j的安装&quot;&gt;&lt;a href=&quot;#一、Neo4j的安装&quot; class=&quot;headerlink&quot; title=&quot;一、Neo4j的安装&quot;&gt;&lt;/a&gt;一、Neo4j的安装&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://neo4j.com/download-ce
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Neo4j" scheme="http://mddcloud.cn/tags/Neo4j/"/>
+    
+      <category term="数据库" scheme="http://mddcloud.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="非关系型数据" scheme="http://mddcloud.cn/tags/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>单链表</title>
