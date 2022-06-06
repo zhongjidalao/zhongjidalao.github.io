@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>马丹丹的博客</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mddcloud.cn/"/>
+  <updated>2022-06-06T09:42:27.888Z</updated>
+  <id>http://mddcloud.cn/</id>
+  
+  <author>
+    <name>马丹丹</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://mddcloud.cn/2022/06/06/hello-world/"/>
+    <id>http://mddcloud.cn/2022/06/06/hello-world/</id>
+    <published>2022-06-06T09:42:27.888Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>在SpringBot中使用Neo4j</title>
+    <link href="http://mddcloud.cn/2021/07/13/%E5%9C%A8SpringBot%E4%B8%AD%E4%BD%BF%E7%94%A8Neo4j/"/>
+    <id>http://mddcloud.cn/2021/07/13/%E5%9C%A8SpringBot%E4%B8%AD%E4%BD%BF%E7%94%A8Neo4j/</id>
+    <published>2021-07-13T22:50:39.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>图数据库Neo4j的安装与使用</title>
+    <link href="http://mddcloud.cn/2021/07/10/%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93Neo4j%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/"/>
+    <id>http://mddcloud.cn/2021/07/10/%E5%9B%BE%E6%95%B0%E6%8D%AE%E5%BA%93Neo4j%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</id>
+    <published>2021-07-10T23:15:09.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、Neo4j的安装"><a href="#一、Neo4j的安装" class="headerlink" title="一、Neo4j的安装"></a>一、Neo4j的安装</h2><ol><li><p>下载</p><p><a href="https://neo4j.com/download-center/#community" target="_blank" rel="noopener">Neo4j Download Center - Neo4j Graph Database Platform</a></p><p>点击上面这个链接根据自己电脑的系统下载对应版本的neo4j社区版，点击下载按钮后会跳转到一个用户注册的页面，不用注册，稍等一下就弹出下载了。</p></li></ol><p>下载完安装包后，将安装包解压放到系统的某个目录里，复制bin目录的路径，写入到系统的环境变量中。</p><p><img src="https://z3.ax1x.com/2021/07/11/Wp4FZq.png" alt=""></p><p><img src="https://z3.ax1x.com/2021/07/11/Wp4kd0.png" alt=""></p><p><strong>接下来要注意，neo4j最新版对应的java版本是java11，没有的可以先去安装个java11</strong></p><ol start="2"><li><p>启动</p><p>在命令行输入 <code>neo4j console</code> 在命令行中启动neo4j</p><p><img src="https://z3.ax1x.com/2021/07/11/Wp4GFK.png" alt=""></p></li></ol><p>windows系统这时如果不想在命令行里启动，想让neo4j在后台启动的话，需要安装neo4j的服务，在命令行输入</p><p><code>neo4j install-service</code></p><p>然后就可以输入 <code>neo4j start</code> 将neo4j在后台启动</p><p>安装并启动完毕后，就可以打开浏览器，输入<code>http://localhost:7474</code>进入neo4j的管理页面。</p><p>初始账号密码为：<strong><em>neo4j</em></strong>和<strong><em>neo4j</em></strong>。首次进入会让设置账号密码，按照自己的喜好设置即可。</p><p><img src="https://z3.ax1x.com/2021/07/11/Wp4L6J.png" alt=""></p><p>这就算安装并启动成功了。</p><h2 id="二、使用"><a href="#二、使用" class="headerlink" title="二、使用"></a>二、使用</h2><p>接下来使用neo4j自己带的Demo，运行其中的Hello Word，来体验一下图数据库。</p><p><img src="https://z3.ax1x.com/2021/07/11/Wp5PpD.png" alt=""></p><p>这样就完成了一个Hello Word的小Demo。</p><p>Neo4j的增删改查都是要写类似于SQL语句的东西，具体的语法可以去w3c上看看，写的非常详细。<a href="https://www.w3cschool.cn/neo4j/" target="_blank" rel="noopener">neo4j 教程_w3cschool</a></p><p>这一篇写了Neo4j的安装与简单的使用，下一篇文章将会写Neo4j在SpringBoot中的使用。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、Neo4j的安装&quot;&gt;&lt;a href=&quot;#一、Neo4j的安装&quot; class=&quot;headerlink&quot; title=&quot;一、Neo4j的安装&quot;&gt;&lt;/a&gt;一、Neo4j的安装&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;下载&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ne
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Neo4j" scheme="http://mddcloud.cn/tags/Neo4j/"/>
+    
+      <category term="数据库" scheme="http://mddcloud.cn/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="非关系型数据" scheme="http://mddcloud.cn/tags/%E9%9D%9E%E5%85%B3%E7%B3%BB%E5%9E%8B%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>单链表</title>
+    <link href="http://mddcloud.cn/2020/07/29/%E5%8D%95%E9%93%BE%E8%A1%A8/"/>
+    <id>http://mddcloud.cn/2020/07/29/%E5%8D%95%E9%93%BE%E8%A1%A8/</id>
+    <published>2020-07-29T10:01:00.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<p>单链表的一个结点分为数据域和指针域，每个指针域里存储着下一个结点的指针信息，这样n个结点连接在一起，就形成了单链表。</p><h3 id="单链表的存储结构"><a href="#单链表的存储结构" class="headerlink" title="单链表的存储结构"></a>单链表的存储结构</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    ElemType data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125; Node;</span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">LinkList</span>;</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;单链表的一个结点分为数据域和指针域，每个指针域里存储着下一个结点的指针信息，这样n个结点连接在一起，就形成了单链表。&lt;/p&gt;
+&lt;h3 id=&quot;单链表的存储结构&quot;&gt;&lt;a href=&quot;#单链表的存储结构&quot; class=&quot;headerlink&quot; title=&quot;单链表的存储结构&quot;&gt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="数据结构" scheme="http://mddcloud.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="线性表" scheme="http://mddcloud.cn/tags/%E7%BA%BF%E6%80%A7%E8%A1%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定时发送微信订阅消息</title>
+    <link href="http://mddcloud.cn/2020/04/04/%E5%AE%9A%E6%97%B6%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E6%B6%88%E6%81%AF/"/>
+    <id>http://mddcloud.cn/2020/04/04/%E5%AE%9A%E6%97%B6%E5%8F%91%E9%80%81%E5%BE%AE%E4%BF%A1%E8%AE%A2%E9%98%85%E6%B6%88%E6%81%AF/</id>
+    <published>2020-04-04T16:15:36.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<p> 微信小程序的消息推送从之前的模板消息更新到了现在的订阅消息，本篇文章就教你怎么使用小程序订阅消息，文后会附上使用python写的定时发送订阅消息的代码。</p><h3 id="1-首先要添加一个订阅消息模板"><a href="#1-首先要添加一个订阅消息模板" class="headerlink" title="1.首先要添加一个订阅消息模板"></a>1.首先要添加一个订阅消息模板</h3><p>登陆上微信小程序的后台，选择订阅消息</p><img src="https://s1.ax1x.com/2020/04/04/Gwfm0x.png" alt="Gwfm0x.png" /><p>选择一个适合自己的模板</p><img src="https://s1.ax1x.com/2020/04/04/GwfKAK.png" width="80%" alt="GwfKAK.png" border="0" /><p>然后就能得到我们的模板ID</p><img src="https://s1.ax1x.com/2020/04/04/Gwfn76.png" alt="Gwfn76.png" border="0" /><h3 id="2-给小程序添加获取权限的代码"><a href="#2-给小程序添加获取权限的代码" class="headerlink" title="2.给小程序添加获取权限的代码"></a>2.给小程序添加获取权限的代码</h3><p>这里文档上写的很清楚，在某个点击事件的地方之类的添加获取权限的代码</p><p>官方文档链接：<a href="https://developers.weixin.qq.com/miniprogram/dev/api/open-api/subscribe-message/wx.requestSubscribeMessage.html" target="_blank" rel="noopener">点击这里</a></p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">wx.requestSubscribeMessage(&#123;</span><br><span class="line">  tmplIds: [<span class="string">''</span>],</span><br><span class="line">  success (res) &#123; &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure><p>用户点击后的效果是这样的，用户点击一次，获取一次发送订阅消息的权限</p><img src="https://res.wx.qq.com/wxdoc/dist/assets/img/request-subscribe-message.3851318e.jpg" /><h3 id="3-发送订阅消息"><a href="#3-发送订阅消息" class="headerlink" title="3.发送订阅消息"></a>3.发送订阅消息</h3><p>官方文档链接：<a href="https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/subscribe-message/subscribeMessage.send.html" target="_blank" rel="noopener">点击这里</a></p><h5 id="1-我们先看看官方给出的api"><a href="#1-我们先看看官方给出的api" class="headerlink" title="1.我们先看看官方给出的api"></a>1.我们先看看官方给出的api</h5><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">POST https:&#x2F;&#x2F;api.weixin.qq.com&#x2F;cgi-bin&#x2F;message&#x2F;subscribe&#x2F;send?access_token&#x3D;ACCESS_TOKEN</span><br></pre></td></tr></table></figure></blockquote><p>可以看到这个api的调用需要先获取ACCESS_TOKEN，我们就先来看看怎么获取到ACCESS_TOKEN，这里官方也给出了api</p><h5 id="2-获取ACCESS-TOKEN"><a href="#2-获取ACCESS-TOKEN" class="headerlink" title="2.获取ACCESS_TOKEN"></a>2.获取ACCESS_TOKEN</h5><blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GET https:&#x2F;&#x2F;api.weixin.qq.com&#x2F;cgi-bin&#x2F;token?grant_type&#x3D;client_credential&amp;appid&#x3D;APPID&amp;secret&#x3D;APPSECRET</span><br></pre></td></tr></table></figure></blockquote><p>我们需要填上小程序的appid和secret并给这个链接发送一个get请求，这样就会给我们返回ACCESS_TOKEN</p><p>我们可以用postman测试一下这个api</p><img src="https://s1.ax1x.com/2020/04/07/GgJAeO.png" alt="GgJAeO.png" border="0" /><p>可以看到成功的获取到了access_token，我们把他填入发送订阅消息时需要的api中，这个api是一个post请求，官方也给出了需要发送的数据，可以去官方文档中查看</p><h5 id="3-测试发送订阅消息"><a href="#3-测试发送订阅消息" class="headerlink" title="3.测试发送订阅消息"></a>3.测试发送订阅消息</h5><p>我们得到了订阅消息模板ID，access_token，就可以根据文档给出的数据发送订阅，这里使用postman测试</p><img src="https://s1.ax1x.com/2020/04/04/Gwo06e.png" alt="Gwo06e.png" border="0" /><p>这样就可以发送订阅消息了</p><p>最后给出我写的定时发送小程序订阅消息的代码：<a href="https://github.com/zhongjidalao/wechat_subscribe" target="_blank" rel="noopener">https://github.com/zhongjidalao/wechat_subscribe</a></p><p>在GitHub中，大家自取，如果有问题可以发送Issues，如果觉得写的不错可以点一下star</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt; 微信小程序的消息推送从之前的模板消息更新到了现在的订阅消息，本篇文章就教你怎么使用小程序订阅消息，文后会附上使用python写的定时发送订阅消息的代码。&lt;/p&gt;
+&lt;h3 id=&quot;1-首先要添加一个订阅消息模板&quot;&gt;&lt;a href=&quot;#1-首先要添加一个订阅消息模板&quot; cla
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Python" scheme="http://mddcloud.cn/tags/Python/"/>
+    
+      <category term="微信" scheme="http://mddcloud.cn/tags/%E5%BE%AE%E4%BF%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>leetcode两数之和</title>
+    <link href="http://mddcloud.cn/2020/01/29/leetcode%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/"/>
+    <id>http://mddcloud.cn/2020/01/29/leetcode%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C/</id>
+    <published>2020-01-29T15:55:56.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p><p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p><p><strong>示例：</strong></p><blockquote><p>给定 nums = [2, 7, 11, 15], target = 9</p><p>因为 nums[0] + nums[1] = 2 + 7 = 9<br>所以返回 [0, 1]</p></blockquote><h2 id="方法一：暴力法"><a href="#方法一：暴力法" class="headerlink" title="方法一：暴力法"></a>方法一：暴力法</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">int</span>[] twoSum(<span class="keyword">int</span>[] nums, <span class="keyword">int</span> target) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; nums.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j] == target - nums[i]) &#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="keyword">new</span> <span class="keyword">int</span>[] &#123; i, j &#125;;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> IllegalArgumentException(<span class="string">"No two sum solution"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h4 id="方法分析："><a href="#方法分析：" class="headerlink" title="方法分析："></a>方法分析：</h4><ul><li>本方法用了两层for循环，时间复杂度为O(n<sub>2</sub>)</li><li>第一层for循环把数组从低到高遍历一遍，找出每个数字的下标</li><li>第二层for循环在第一层for循环的基础上，使用if语句对比数字下标为 i 的数字和之后的每个数字</li><li>使用一个if语句对比两层循环的下标，如果存在正好能被target减去的，则为正确答案</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。&lt;/p&gt;
+&lt;p&gt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Java" scheme="http://mddcloud.cn/tags/Java/"/>
+    
+      <category term="数据结构" scheme="http://mddcloud.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
+    
+      <category term="leetcode" scheme="http://mddcloud.cn/tags/leetcode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Java浮动广告</title>
+    <link href="http://mddcloud.cn/2019/12/21/Java%E6%B5%AE%E5%8A%A8%E5%B9%BF%E5%91%8A/"/>
+    <id>http://mddcloud.cn/2019/12/21/Java%E6%B5%AE%E5%8A%A8%E5%B9%BF%E5%91%8A/</id>
+    <published>2019-12-21T02:31:23.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<p>js的浮动广告代码，复制就能用<br>自己修改图片的地址</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=<span class="string">"utf-8"</span>&gt;</span><br><span class="line">&lt;title&gt;图片浮动&lt;<span class="regexp">/title&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;div id=<span class="string">"img"</span> style=<span class="string">"position:absolute"</span>&gt;</span><br><span class="line">&lt;img src=<span class="string">"图片的地址"</span> border=<span class="string">"0"</span>&gt;</span><br><span class="line">&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/图片初始的位置</span></span><br><span class="line"><span class="regexp">var x = 50,y = 60</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/x轴的控制器</span></span><br><span class="line"><span class="regexp">var x_in = true</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/y轴的控制器</span></span><br><span class="line"><span class="regexp">var y_in = true</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/设置一个步长，值越大移动越快</span></span><br><span class="line"><span class="regexp">var step = 1</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/设置函数运行周期的时间</span></span><br><span class="line"><span class="regexp">var delay = 10</span></span><br><span class="line"><span class="regexp">var img = document.getElementById("img")</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/实现浮动的函数</span></span><br><span class="line"><span class="regexp">function float() &#123;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/左边头部设置为0</span></span><br><span class="line"><span class="regexp">var L = T = 0</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/移动层的右边界   页面可视层 - 元素的宽度</span></span><br><span class="line"><span class="regexp">var R = document.body.clientWidth - img.offsetWidth</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/移动层的下边界</span></span><br><span class="line"><span class="regexp">var B = document.body.clientHeight - img.offsetHeight</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/更新x的值</span></span><br><span class="line"><span class="regexp">img.style.left = x</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/更新y的值</span></span><br><span class="line"><span class="regexp">img.style.top = y</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/x为图片的x轴，如果x_in为true表示在视野内，图片向前移动，如果为false表示越界图片往回移动</span></span><br><span class="line"><span class="regexp">x = x + step*(x_in?1:-1)</span></span><br><span class="line"><span class="regexp">if (x &lt; L) &#123;</span></span><br><span class="line"><span class="regexp">x_in = true</span></span><br><span class="line"><span class="regexp">x = L</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">if (x &gt; R)&#123;</span></span><br><span class="line"><span class="regexp">x_in = false</span></span><br><span class="line"><span class="regexp">x = R</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">y = y + step*(y_in?1:-1)</span></span><br><span class="line"><span class="regexp">if (y &lt; T) &#123; </span></span><br><span class="line"><span class="regexp">y_in = true</span></span><br><span class="line"><span class="regexp">y = T</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">if (y &gt; B) &#123;</span></span><br><span class="line"><span class="regexp">y_in = false</span></span><br><span class="line"><span class="regexp">y = B</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/setInterval按周期运行函数(以毫秒记)</span></span><br><span class="line"><span class="regexp">var itl = setInterval("float()", delay)</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/鼠标移动事件，当鼠标移动到对象上时触发</span></span><br><span class="line"><span class="regexp">img.onmouseover = function()&#123;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/取消setInterval设置的值</span></span><br><span class="line"><span class="regexp">clearInterval(itl)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">/</span><span class="regexp">/鼠标移动事件，当鼠标移出对象时触发</span></span><br><span class="line"><span class="regexp">img.onmouseout = function()&#123;</span></span><br><span class="line"><span class="regexp">itl = setInterval("float()", delay)</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line">&lt;<span class="regexp">/body&gt;</span></span><br><span class="line"><span class="regexp">&lt;/</span>html&gt;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;js的浮动广告代码，复制就能用&lt;br&gt;自己修改图片的地址&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="JavaScript" scheme="http://mddcloud.cn/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在手机上安装Linux</title>
+    <link href="http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/"/>
+    <id>http://mddcloud.cn/2019/12/12/%E5%9C%A8%E6%89%8B%E6%9C%BA%E4%B8%8A%E5%AE%89%E8%A3%85Linux/</id>
+    <published>2019-12-12T16:30:00.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h2><p>手机需要先root，然后安装三个软件</p><p><strong>BusyBox</strong> 安装Linux的支撑组件</p><p><strong>Linux Deploy</strong> Linux的容器</p><p><strong>JuiceSSH</strong> SSH连接软件</p><p> <img src="https://s2.ax1x.com/2019/12/12/Q6txMD.md.jpg" alt="Q6txMD.md.jpg"></p><h3 id="安装效果如下"><a href="#安装效果如下" class="headerlink" title="安装效果如下"></a>安装效果如下</h3><p><img src="https://s2.ax1x.com/2019/12/12/Q6wucV.md.png" alt="Q6wucV.md.png"><br><img src="https://s2.ax1x.com/2019/12/12/Q6wp1P.png" alt="Q6wp1P.png"><br><img src="https://s2.ax1x.com/2019/12/12/Q6dsS0.png" alt="Q6dsS0.png"></p><h2 id="二、配置Linux-Deploy"><a href="#二、配置Linux-Deploy" class="headerlink" title="二、配置Linux Deploy"></a>二、配置Linux Deploy</h2><p>接下来打开Linux Deploy，先点击右下角的按钮，进入到Linux的配置界面，我试过很多给版本，目前的这个版本是最稳定的，建议配置的和我一样</p><p><img src="https://www.imageoss.com/images/2019/12/12/TIM20191212164137.png" alt="TIM20191212164137.png"><br><img src="https://www.imageoss.com/images/2019/12/12/TIM20191212164129.jpg" alt="TIM20191212164129.jpg"><br><img src="https://www.imageoss.com/images/2019/12/12/TIM20191212164134.png" alt="TIM20191212164134.png"></p><h2 id="三、安装Linux"><a href="#三、安装Linux" class="headerlink" title="三、安装Linux"></a>三、安装Linux</h2><p>完成这些配置后返回首页面，点击右上角的三个点，然后点击安装。<br>因为源配置的是国内的源，速度快的话几分钟就好了。<br>当出现&lt;&lt;&lt;deploy时，就是完成了</p><p>这时就点击启动，然后用SSH连接工具，连接到Linux了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;一、准备工作&quot;&gt;&lt;a href=&quot;#一、准备工作&quot; class=&quot;headerlink&quot; title=&quot;一、准备工作&quot;&gt;&lt;/a&gt;一、准备工作&lt;/h2&gt;&lt;p&gt;手机需要先root，然后安装三个软件&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;BusyBox&lt;/strong&gt; 安装L
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Linux" scheme="http://mddcloud.cn/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Servlet3.0上传文件</title>
+    <link href="http://mddcloud.cn/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/"/>
+    <id>http://mddcloud.cn/2019/12/12/Servlet3-0%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6/</id>
+    <published>2019-12-12T16:13:48.000Z</published>
+    <updated>2022-06-06T09:42:27.888Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="getPart-getParts-取得上传文件"><a href="#getPart-getParts-取得上传文件" class="headerlink" title="getPart(),getParts()取得上传文件"></a>getPart(),getParts()取得上传文件</h2><p>在Servlet3.0中内置了上传文件的API，所以上传变得非常方便</p><h2 id="首先是前端的代码"><a href="#首先是前端的代码" class="headerlink" title="首先是前端的代码"></a>首先是前端的代码</h2><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="meta-keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>上传文件<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">"/upload.do"</span> <span class="attr">method</span>=<span class="string">"post"</span> <span class="attr">enctype</span>=<span class="string">"multipart/form-data"</span>&gt;</span></span><br><span class="line">        上传文件:<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"file"</span> <span class="attr">name</span>=<span class="string">"photo"</span> <span class="attr">value</span>=<span class="string">""</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"submit"</span> <span class="attr">value</span>=<span class="string">"Upload"</span> <span class="attr">name</span>=<span class="string">"upload"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="后端处理的代码"><a href="#后端处理的代码" class="headerlink" title="后端处理的代码"></a>后端处理的代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> javax.servlet.ServletException;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.MultipartConfig;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.annotation.WebServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServlet;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletRequest;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.HttpServletResponse;</span><br><span class="line"><span class="keyword">import</span> javax.servlet.http.Part;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"></span><br><span class="line"><span class="comment">//设置上传的目录</span></span><br><span class="line"><span class="meta">@MultipartConfig</span>(location = <span class="string">"D:/upload"</span>)</span><br><span class="line"><span class="meta">@WebServlet</span>(<span class="string">"/upload.do"</span>)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UploadServlet3</span> <span class="keyword">extends</span> <span class="title">HttpServlet</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">doPost</span><span class="params">(HttpServletRequest req, HttpServletResponse resp)</span> <span class="keyword">throws</span> ServletException, IOException </span>&#123;</span><br><span class="line">        req.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">        resp.setCharacterEncoding(<span class="string">"UTF-8"</span>);</span><br><span class="line">        resp.setContentType(<span class="string">"text/html;charset=utf-8"</span>);</span><br><span class="line"></span><br><span class="line">        Part part = req.getPart(<span class="string">"photo"</span>);</span><br><span class="line">        String filename = getFilename(part);</span><br><span class="line">        part.write(filename);</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> String <span class="title">getFilename</span><span class="params">(Part part)</span></span>&#123;</span><br><span class="line">        String header = part.getHeader(<span class="string">"Content-Disposition"</span>);</span><br><span class="line">        String filename = header.substring(header.indexOf(<span class="string">"filename=\""</span>) + <span class="number">10</span>,header.lastIndexOf(<span class="string">"\""</span>));</span><br><span class="line">        <span class="keyword">return</span> filename;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;getPart-getParts-取得上传文件&quot;&gt;&lt;a href=&quot;#getPart-getParts-取得上传文件&quot; class=&quot;headerlink&quot; title=&quot;getPart(),getParts()取得上传文件&quot;&gt;&lt;/a&gt;getPart(),getP
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Java" scheme="http://mddcloud.cn/tags/Java/"/>
+    
+  </entry>
+  
+</feed>
